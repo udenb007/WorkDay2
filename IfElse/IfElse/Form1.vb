@@ -11,9 +11,20 @@ Public Class Form1
         num1 = CDbl(st1)
         num2 = CDbl(st2)
 
-        ' Your code here
 
-        txtResult.Text = "Not implemented yet"
+        If num1 > num2 Then
+            largerNum = num1
+            txtResult.Text = CStr(num1)
+
+        ElseIf num2 > num1 Then
+            largerNum = num2
+            txtResult.Text = CStr(num2)
+
+        ElseIf num1 = num2 Then
+            txtResult.Text = "Numbers are equal"
+
+        End If
+
     End Sub
 
 End Class
